@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>《深度学习基础及应用》项目四：利用卷积神经网络进行图像处理</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #2b2b2b; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; padding: 20px 0; }
+  header { max-width: 1280px; margin: 0 auto 24px; padding: 20px 24px; color: #fff; background: #1a1a1a; border-radius: 8px; }
+  header h1 { font-size: 20px; font-weight: 600; }
+  header p { margin-top: 6px; color: #aaa; font-size: 13px; }
+  .slide { max-width: 1280px; margin: 0 auto 16px; background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+  .slide img { display: block; width: 100%; height: auto; }
+  .slide .caption { padding: 8px 12px; font-size: 12px; color: #666; background: #f5f5f5; border-top: 1px solid #e0e0e0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>《深度学习基础及应用》项目四：利用卷积神经网络进行图像处理</h1>
+  <p>共 79 页 · 由 PowerPoint 逐页导出为 1920×1080 PNG · 垂直滚动浏览</p>
+</header>
+<div class="slide"><img src="slide-001.png" alt="第 1 页"><div class="caption">第 1 / 79 页</div></div>
+<div class="slide"><img src="slide-002.png" alt="第 2 页"><div class="caption">第 2 / 79 页</div></div>
+<div class="slide"><img src="slide-003.png" alt="第 3 页"><div class="caption">第 3 / 79 页</div></div>
+<div class="slide"><img src="slide-004.png" alt="第 4 页"><div class="caption">第 4 / 79 页</div></div>
+<div class="slide"><img src="slide-005.png" alt="第 5 页"><div class="caption">第 5 / 79 页</div></div>
+<div class="slide"><img src="slide-006.png" alt="第 6 页"><div class="caption">第 6 / 79 页</div></div>
+<div class="slide"><img src="slide-007.png" alt="第 7 页"><div class="caption">第 7 / 79 页</div></div>
+<div class="slide"><img src="slide-008.png" alt="第 8 页"><div class="caption">第 8 / 79 页</div></div>
+<div class="slide"><img src="slide-009.png" alt="第 9 页"><div class="caption">第 9 / 79 页</div></div>
+<div class="slide"><img src="slide-010.png" alt="第 10 页"><div class="caption">第 10 / 79 页</div></div>
+<div class="slide"><img src="slide-011.png" alt="第 11 页"><div class="caption">第 11 / 79 页</div></div>
+<div class="slide"><img src="slide-012.png" alt="第 12 页"><div class="caption">第 12 / 79 页</div></div>
+<div class="slide"><img src="slide-013.png" alt="第 13 页"><div class="caption">第 13 / 79 页</div></div>
+<div class="slide"><img src="slide-014.png" alt="第 14 页"><div class="caption">第 14 / 79 页</div></div>
+<div class="slide"><img src="slide-015.png" alt="第 15 页"><div class="caption">第 15 / 79 页</div></div>
+<div class="slide"><img src="slide-016.png" alt="第 16 页"><div class="caption">第 16 / 79 页</div></div>
+<div class="slide"><img src="slide-017.png" alt="第 17 页"><div class="caption">第 17 / 79 页</div></div>
+<div class="slide"><img src="slide-018.png" alt="第 18 页"><div class="caption">第 18 / 79 页</div></div>
+<div class="slide"><img src="slide-019.png" alt="第 19 页"><div class="caption">第 19 / 79 页</div></div>
+<div class="slide"><img src="slide-020.png" alt="第 20 页"><div class="caption">第 20 / 79 页</div></div>
+<div class="slide"><img src="slide-021.png" alt="第 21 页"><div class="caption">第 21 / 79 页</div></div>
+<div class="slide"><img src="slide-022.png" alt="第 22 页"><div class="caption">第 22 / 79 页</div></div>
+<div class="slide"><img src="slide-023.png" alt="第 23 页"><div class="caption">第 23 / 79 页</div></div>
+<div class="slide"><img src="slide-024.png" alt="第 24 页"><div class="caption">第 24 / 79 页</div></div>
+<div class="slide"><img src="slide-025.png" alt="第 25 页"><div class="caption">第 25 / 79 页</div></div>
+<div class="slide"><img src="slide-026.png" alt="第 26 页"><div class="caption">第 26 / 79 页</div></div>
+<div class="slide"><img src="slide-027.png" alt="第 27 页"><div class="caption">第 27 / 79 页</div></div>
+<div class="slide"><img src="slide-028.png" alt="第 28 页"><div class="caption">第 28 / 79 页</div></div>
+<div class="slide"><img src="slide-029.png" alt="第 29 页"><div class="caption">第 29 / 79 页</div></div>
+<div class="slide"><img src="slide-030.png" alt="第 30 页"><div class="caption">第 30 / 79 页</div></div>
+<div class="slide"><img src="slide-031.png" alt="第 31 页"><div class="caption">第 31 / 79 页</div></div>
+<div class="slide"><img src="slide-032.png" alt="第 32 页"><div class="caption">第 32 / 79 页</div></div>
+<div class="slide"><img src="slide-033.png" alt="第 33 页"><div class="caption">第 33 / 79 页</div></div>
+<div class="slide"><img src="slide-034.png" alt="第 34 页"><div class="caption">第 34 / 79 页</div></div>
+<div class="slide"><img src="slide-035.png" alt="第 35 页"><div class="caption">第 35 / 79 页</div></div>
+<div class="slide"><img src="slide-036.png" alt="第 36 页"><div class="caption">第 36 / 79 页</div></div>
+<div class="slide"><img src="slide-037.png" alt="第 37 页"><div class="caption">第 37 / 79 页</div></div>
+<div class="slide"><img src="slide-038.png" alt="第 38 页"><div class="caption">第 38 / 79 页</div></div>
+<div class="slide"><img src="slide-039.png" alt="第 39 页"><div class="caption">第 39 / 79 页</div></div>
+<div class="slide"><img src="slide-040.png" alt="第 40 页"><div class="caption">第 40 / 79 页</div></div>
+<div class="slide"><img src="slide-041.png" alt="第 41 页"><div class="caption">第 41 / 79 页</div></div>
+<div class="slide"><img src="slide-042.png" alt="第 42 页"><div class="caption">第 42 / 79 页</div></div>
+<div class="slide"><img src="slide-043.png" alt="第 43 页"><div class="caption">第 43 / 79 页</div></div>
+<div class="slide"><img src="slide-044.png" alt="第 44 页"><div class="caption">第 44 / 79 页</div></div>
+<div class="slide"><img src="slide-045.png" alt="第 45 页"><div class="caption">第 45 / 79 页</div></div>
+<div class="slide"><img src="slide-046.png" alt="第 46 页"><div class="caption">第 46 / 79 页</div></div>
+<div class="slide"><img src="slide-047.png" alt="第 47 页"><div class="caption">第 47 / 79 页</div></div>
+<div class="slide"><img src="slide-048.png" alt="第 48 页"><div class="caption">第 48 / 79 页</div></div>
+<div class="slide"><img src="slide-049.png" alt="第 49 页"><div class="caption">第 49 / 79 页</div></div>
+<div class="slide"><img src="slide-050.png" alt="第 50 页"><div class="caption">第 50 / 79 页</div></div>
+<div class="slide"><img src="slide-051.png" alt="第 51 页"><div class="caption">第 51 / 79 页</div></div>
+<div class="slide"><img src="slide-052.png" alt="第 52 页"><div class="caption">第 52 / 79 页</div></div>
+<div class="slide"><img src="slide-053.png" alt="第 53 页"><div class="caption">第 53 / 79 页</div></div>
+<div class="slide"><img src="slide-054.png" alt="第 54 页"><div class="caption">第 54 / 79 页</div></div>
+<div class="slide"><img src="slide-055.png" alt="第 55 页"><div class="caption">第 55 / 79 页</div></div>
+<div class="slide"><img src="slide-056.png" alt="第 56 页"><div class="caption">第 56 / 79 页</div></div>
+<div class="slide"><img src="slide-057.png" alt="第 57 页"><div class="caption">第 57 / 79 页</div></div>
+<div class="slide"><img src="slide-058.png" alt="第 58 页"><div class="caption">第 58 / 79 页</div></div>
+<div class="slide"><img src="slide-059.png" alt="第 59 页"><div class="caption">第 59 / 79 页</div></div>
+<div class="slide"><img src="slide-060.png" alt="第 60 页"><div class="caption">第 60 / 79 页</div></div>
+<div class="slide"><img src="slide-061.png" alt="第 61 页"><div class="caption">第 61 / 79 页</div></div>
+<div class="slide"><img src="slide-062.png" alt="第 62 页"><div class="caption">第 62 / 79 页</div></div>
+<div class="slide"><img src="slide-063.png" alt="第 63 页"><div class="caption">第 63 / 79 页</div></div>
+<div class="slide"><img src="slide-064.png" alt="第 64 页"><div class="caption">第 64 / 79 页</div></div>
+<div class="slide"><img src="slide-065.png" alt="第 65 页"><div class="caption">第 65 / 79 页</div></div>
+<div class="slide"><img src="slide-066.png" alt="第 66 页"><div class="caption">第 66 / 79 页</div></div>
+<div class="slide"><img src="slide-067.png" alt="第 67 页"><div class="caption">第 67 / 79 页</div></div>
+<div class="slide"><img src="slide-068.png" alt="第 68 页"><div class="caption">第 68 / 79 页</div></div>
+<div class="slide"><img src="slide-069.png" alt="第 69 页"><div class="caption">第 69 / 79 页</div></div>
+<div class="slide"><img src="slide-070.png" alt="第 70 页"><div class="caption">第 70 / 79 页</div></div>
+<div class="slide"><img src="slide-071.png" alt="第 71 页"><div class="caption">第 71 / 79 页</div></div>
+<div class="slide"><img src="slide-072.png" alt="第 72 页"><div class="caption">第 72 / 79 页</div></div>
+<div class="slide"><img src="slide-073.png" alt="第 73 页"><div class="caption">第 73 / 79 页</div></div>
+<div class="slide"><img src="slide-074.png" alt="第 74 页"><div class="caption">第 74 / 79 页</div></div>
+<div class="slide"><img src="slide-075.png" alt="第 75 页"><div class="caption">第 75 / 79 页</div></div>
+<div class="slide"><img src="slide-076.png" alt="第 76 页"><div class="caption">第 76 / 79 页</div></div>
+<div class="slide"><img src="slide-077.png" alt="第 77 页"><div class="caption">第 77 / 79 页</div></div>
+<div class="slide"><img src="slide-078.png" alt="第 78 页"><div class="caption">第 78 / 79 页</div></div>
+<div class="slide"><img src="slide-079.png" alt="第 79 页"><div class="caption">第 79 / 79 页</div></div>
+</body></html>
